@@ -1,0 +1,216 @@
+{
+  "year": 2024,
+  "referenceDate": "2024-12-31",
+  "surveyPeriod": "2025-02-07/2025-03-04",
+  "publishedAt": "2026-07-01",
+  "totalEmployees": 1563954,
+  "totalEstablishments": 402419,
+  "classification": "제11차 한국표준산업분류(KSIC), 2024-01-01 고시",
+  "geography": "부산광역시",
+  "unit": "명",
+  "industries": [
+    {
+      "code": "A",
+      "label": "농업, 임업 및 어업",
+      "employees": 3333
+    },
+    {
+      "code": "B",
+      "label": "광업",
+      "employees": 33
+    },
+    {
+      "code": "C",
+      "label": "제조업",
+      "employees": 210397
+    },
+    {
+      "code": "D",
+      "label": "전기, 가스, 증기 및 공기 조절 공급업",
+      "employees": 4714
+    },
+    {
+      "code": "E",
+      "label": "수도, 하수 및 폐기물 처리, 원료 재생업",
+      "employees": 7591
+    },
+    {
+      "code": "F",
+      "label": "건설업",
+      "employees": 110035
+    },
+    {
+      "code": "G",
+      "label": "도매 및 소매업",
+      "employees": 235313
+    },
+    {
+      "code": "H",
+      "label": "운수 및 창고업",
+      "employees": 136371
+    },
+    {
+      "code": "I",
+      "label": "숙박 및 음식점업",
+      "employees": 153036
+    },
+    {
+      "code": "J",
+      "label": "정보통신업",
+      "employees": 21228
+    },
+    {
+      "code": "K",
+      "label": "금융 및 보험업",
+      "employees": 50537
+    },
+    {
+      "code": "L",
+      "label": "부동산업",
+      "employees": 44615
+    },
+    {
+      "code": "M",
+      "label": "전문, 과학 및 기술 서비스업",
+      "employees": 60567
+    },
+    {
+      "code": "N",
+      "label": "사업시설 관리, 사업 지원 및 임대 서비스업",
+      "employees": 75767
+    },
+    {
+      "code": "O",
+      "label": "공공 행정, 국방 및 사회보장 행정",
+      "employees": 54720
+    },
+    {
+      "code": "P",
+      "label": "교육 서비스업",
+      "employees": 106156
+    },
+    {
+      "code": "Q",
+      "label": "보건업 및 사회복지 서비스업",
+      "employees": 203967
+    },
+    {
+      "code": "R",
+      "label": "예술, 스포츠 및 여가관련 서비스업",
+      "employees": 25292
+    },
+    {
+      "code": "S",
+      "label": "협회 및 단체, 수리 및 기타 개인 서비스업",
+      "employees": 60282
+    }
+  ],
+  "sizes": [
+    {
+      "label": "1~4명",
+      "sourceLabel": "4명 이하",
+      "min": 1,
+      "max": 4,
+      "employees": 507958,
+      "establishments": 350375
+    },
+    {
+      "label": "5~19명",
+      "sourceLabel": "5~19명",
+      "min": 5,
+      "max": 19,
+      "employees": 348040,
+      "establishments": 41818
+    },
+    {
+      "label": "20~299명",
+      "sourceLabel": "20~299명",
+      "min": 20,
+      "max": 299,
+      "employees": 517376,
+      "establishments": 9955
+    },
+    {
+      "label": "300명 이상",
+      "sourceLabel": "300명 이상",
+      "min": 300,
+      "max": null,
+      "employees": 190580,
+      "establishments": 271
+    }
+  ],
+  "sources": [
+    {
+      "title": "부산광역시 2024년 기준 사업체조사 보고서, 7쪽 표2 및 14쪽 업종별 사업체수·종사자수",
+      "url": "https://book.busan.go.kr/Viewer/AUS1UOF55FGI",
+      "referenceYear": 2024,
+      "accessedAt": "2026-10-19",
+      "pages": [
+        7,
+        14
+      ],
+      "pdfPageNumbers": [
+        14,
+        21
+      ],
+      "extraction": "공식 전자책 원본 PDF 및 전자책 이미지 표를 눈으로 대조해 전재. 산업별 합계가 총 종사자수 1,563,954명과 일치함을 확인."
+    },
+    {
+      "title": "부산광역시 2024년 기준 사업체조사 보고서, 16쪽 업종별·종사자 규모별 사업체수·종사자수",
+      "url": "https://book.busan.go.kr/Viewer/AUS1UOF55FGI",
+      "referenceYear": 2024,
+      "accessedAt": "2026-10-19",
+      "pages": [
+        16
+      ],
+      "pdfPageNumbers": [
+        23
+      ],
+      "extraction": "규모별 총계 행. 네 규모 구간의 합계가 총 종사자수 1,563,954명과 일치함을 확인."
+    },
+    {
+      "title": "Big-데이터웨이브 사업체 조사자료 [2024년] (2025-12-31 등록)",
+      "url": "https://data.busan.go.kr/bdip/board/statRpt.do?bbs=STTMSTR_000000000295QRGsrfVsBr&article=8877",
+      "referenceYear": 2024,
+      "accessedAt": "2026-10-19"
+    }
+  ],
+  "attribution": "부산광역시, 「2024년 기준 사업체조사 보고서」 7·14·16쪽에서 전재",
+  "limitations": [
+    "2024년 말의 사업체 종사자 분포이며, 현재 채용공고·신입 채용인원·개인별 취업 확률이 아니다.",
+    "종사자에는 상용근로자 외 자영업자·무급가족종사자 등도 포함된다. 이 통계를 채용확률로 표현해서는 안 된다.",
+    "사업체 기준 통계이므로 법인 전체의 기업체 규모·기업 수와 다르다. 동일 법인이 여러 사업장을 가질 수 있다.",
+    "조사대상에서 개인 경영 농림어업, 임금종사자가 없는 개인 부동산 임대업, 국방·국가기밀보안 시설, T 가구 내 고용·자가소비활동, U 국제·외국기관 등을 제외한다(보고서 1쪽).",
+    "이 파일은 산업별 주변분포와 규모별 주변분포만 제공한다. 이를 곱해 공식 산업×규모 교차분포를 만들지 않는다.",
+    "규모별 1~4/5~19/20~299/300명 이상 구분은 사업체 종사자수에 따른 구간으로 법적 대기업·중견기업·중소기업 분류가 아니다.",
+    "모의 추첨에서 산업 가중치를 적용한 뒤 해당 산업의 수록 기업 중 균등추첨하면, 수록 기업 목록의 범위와 편향을 따른다. 부산 전체 기업을 대표하지 않는다.",
+    "2024년 보고서는 KSIC 제11차 분류를 적용한다. 다른 분류 버전 또는 전년도 자료와 비교할 때 유의해야 한다.",
+    "보고서의 일부 세부 교차표는 2개 이하 사업체 비밀보호를 위해 X로 가린 값이 있다. 이 파일의 산업·규모 총계에는 X가 없으며, 감춰진 값을 역산하지 않았다."
+  ],
+  "integrationNotes": [
+    {
+      "provider": "Blind",
+      "status": "link-only-unless-licensed",
+      "note": "2025-12-24 약관은 명시적 허가 없는 자동·수동 크롤링, 추출, 복제, 재판매 등을 금지한다. 리뷰 본문·평점 재배포는 허가 확인 전 구현하지 않고 외부 원문 링크를 제공하는 설계 권장.",
+      "url": "https://us.teamblind.com/setting/term_and_privacy?date=20251224&lang=en"
+    },
+    {
+      "provider": "KOSIS",
+      "status": "api-key-required",
+      "note": "공유서비스 통계자료 API는 발급된 apiKey를 필수로 요구한다. 인증키 발급·활용 신청 뒤 서버에서 갱신하도록 구성할 수 있다. 이 파일은 인증키 없이 공식 공개 보고서를 확인해 고정한 2024년 자료다.",
+      "url": "https://kosis.kr/openapi/devGuide/devGuide_0201List.do"
+    },
+    {
+      "provider": "OpenDART",
+      "status": "api-key-required",
+      "note": "공식 가이드는 40자리 crtfc_key를 필수로 요구한다. 요청제한 오류 020은 일반적으로 20,000건 이상에서 발생하되 계정별 설정이 다를 수 있다. 개별 기업 공시의 직원 수는 부산 사업장 직원 수로 간주하면 안 된다. 정적 배포 시 브라우저에 키를 넣는 대신 비공개 갱신 작업에서 자료를 검토해 JSON에 반영해야 한다.",
+      "url": "https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS005&apiId=2020024"
+    },
+    {
+      "provider": "ALIO/알리오플러스",
+      "status": "api-key-required",
+      "note": "알리오플러스는 시설·행사·사업·기관정보 OpenAPI와 인증키 발급 절차를 제공한다. 이것만으로 기관 직원 평균보수·부산 사업장 인원이 제공된다고 단정하지 않고, 별도 경영공시의 정의와 집계 범위를 확인해야 한다.",
+      "url": "https://www.alioplus.go.kr/openapi/openAPI.do"
+    }
+  ]
+}
