@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="description" content="부산의 실제 기업을 만나는 랜덤 취업 시뮬레이터. 업종 통계 보정 추첨과 균등 추첨, 기업정보 비교, 출처 확인까지.">
+  <title>랜덤 부산 취업하기 | 부산에서 만나는 다음 가능성</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./readability.css">
+  <link rel="stylesheet" href="./sky-theme.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#simulator">추첨으로 바로 가기</a>
+  <header class="header wrap">
+    <a class="brand" href="./" aria-label="랜덤 부산 취업하기 홈"><img src="./favicon.svg" alt="" width="38" height="38"><span>부산취업<span class="brand-thin"> 랜덤클럽</span><small>BUSAN WORK CLUB</small></span></a>
+    <nav aria-label="주 메뉴"><a href="#simulator" class="nav-active">취업 시뮬레이터</a><a href="#companies">기업 둘러보기</a><a href="#data-note">데이터 노트 <span>↗</span></a></nav>
+    <span class="header-tag"><i></i> 부산의 다음 가능성</span>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><div class="eyebrow"><span>BUSAN WORK CLUB</span><b>부산 에디션 03</b></div>
+        <h1 id="hero-title">푸른 부산에서,<br><span>내 다음 회사를 만나요.</span></h1>
+        <p>당신은 부산의 어떤 회사에 취업하게 될까요?<br> 갈매기·국밥·북항상어와 함께 찾아보세요.</p>
+        <div class="hero-actions"><a class="hero-start" href="#simulator">내 회사 뽑으러 가기 <span aria-hidden="true">↓</span></a><span class="hero-proof">실제 기업 60곳 · 공개 자료</span></div>
+      </div>
+      <div class="crew-scene" aria-label="부산 바다를 배경으로 서 있는 취업준비생 캐릭터 세 명">
+        <div class="scene-heading"><span>우리의 다음 출근지는?</span><b>HELLO, BUSAN!</b></div>
+        <svg class="port-backdrop" viewBox="0 0 680 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="567" cy="69" r="31" fill="#ffe1a3"/>
+          <g fill="#ffffff" opacity=".9"><path d="M41 85a17 17 0 0 1 31-9 24 24 0 0 1 45 9z"/><path d="M415 53a14 14 0 0 1 27-6 20 20 0 0 1 37 6z"/></g>
+          <g fill="#b2d9f4"><path d="M0 244v-79h28v79m10 0v-117h32v117m12 0v-93h26v93m20 0v-133h30v133m405 0v-90h37v90m13 0v-116h29v116m10 0v-73h30v73"/></g>
+          <path d="M0 244h680v86H0z" fill="#8bd4fc"/>
+          <g fill="none" stroke="#6aaeda"><path d="M6 228h674" stroke-width="8"/><path d="M121 238V105m8 133V105m401 133V94m8 144V94" stroke-width="5"/><path d="M0 218q66-11 125-109 203 197 409-11 73 104 146 120" stroke-width="3"/><path d="M30 209v17m33-41v41m31-80v80m68-80v80m35-47v47m35-28v28m39-12v12m141-13v13m34-31v31m35-49v49m86-60v60m36-25v25m35-8v8" stroke-width="1.5"/></g>
+          <path d="M0 285q67-14 137 0t137 0 137 0 137 0 137 0" fill="none" stroke="#ccefff" stroke-width="3"/>
+        </svg>
+        <div class="crew-lineup">
+          <figure class="crew-member crew-seagull"><img src="./assets/characters/seagull-applicant.png" alt="셔츠와 넥타이를 입고 이력서 파일을 든 갈매기 취준생" width="1205" height="1305" fetchpriority="high"><figcaption>갈매기 취준생</figcaption></figure>
+          <figure class="crew-member crew-gukbap"><img src="./assets/characters/gukbap-intern.png" alt="돼지고기와 뽀얀 국물이 담긴 그릇에 명찰을 달고 클립보드를 든 돼지국밥 인턴" width="1226" height="1283" fetchpriority="high"><figcaption>돼지국밥 인턴</figcaption></figure>
+          <figure class="crew-member crew-shark"><img src="./assets/characters/northport-shark-intern.png" alt="짙은 남색 몸에 셔츠와 명찰을 착용하고 서류가방을 든 창작 북항상어 인턴" width="1234" height="1274" fetchpriority="high"><figcaption>북항상어 인턴</figcaption></figure>
+        </div>
+        <div class="scene-caption"><span>설레는 첫 출근, 같이 준비해요.</span><span aria-hidden="true">✦</span></div>
+      </div>
+    </section>
+
+    <section id="simulator" class="simulator" aria-label="랜덤 부산 취업하기">
+      <div class="control-panel panel">
+        <div class="section-kicker"><span class="step-dot">01</span> 나만의 다음 회사 찾기</div>
+        <h2>🏢 랜덤 부산 취업하기</h2><p class="muted small">어떤 방식으로 만나볼까요?</p>
+        <div class="mode-switch" role="group" aria-label="추첨 방식">
+          <button type="button" data-mode="weighted" class="selected" aria-pressed="true"><span>◉</span> 현실 기반 취업<small>업종 통계 보정</small></button>
+          <button type="button" data-mode="uniform" aria-pressed="false"><span>⚄</span> 기업 균등 추첨<small>모든 기업에 같은 기회</small></button>
+        </div>
+        <p id="mode-description" class="mode-description">데이터를 불러오는 중입니다.</p>
+        <div class="filter-row"><label>근무 지역<select id="district-filter"><option value="">부산 전체</option></select></label><label>관심 업종<select id="industry-filter"><option value="">모든 업종</option></select></label></div>
+        <div class="pool-line"><span><i></i> 현재 추첨 대상</span><strong id="pool-count">—개 기업</strong></div>
+        <button id="draw-button" class="draw-button" type="button" disabled><span class="dice-icon">⚄</span><span id="draw-label">기업을 불러오는 중</span><span>↗</span></button>
+        <p class="control-note">가입 없이 가볍게, 몇 번이든 새롭게.</p>
+        <div class="control-divider"></div>
+        <div class="mini-stats"><div><strong id="verified-count">—</strong><span>출처 확인 기업</span></div><div><strong id="total-count">0</strong><span>나의 누적 취업</span></div><div><strong id="sector-count">—</strong><span>만날 수 있는 업종</span></div></div>
+        <button class="text-button methodology-trigger" type="button">추첨 확률은 어떻게 계산하나요? <span>↗</span></button>
+      </div>
+
+      <div class="result-panel panel" id="result-panel" aria-busy="false">
+        <div class="result-topline"><span><i></i> YOUR NEXT WORKPLACE</span><span id="result-number">아직 만나지 않은 가능성</span></div>
+        <div id="empty-result" class="empty-result"><div class="empty-graphic"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><div class="building-icon"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>?</b><span class="spark spark-one">✦</span><span class="spark spark-two">+</span></div><div class="empty-tag">첫 출근, 어디로 할까요?</div><h2>뜻밖의 회사가<br>새로운 시작이 될지도.</h2><p>랜덤 취업 버튼을 눌러주세요.<br>실제 부산 기업의 정보와 출처를 함께 보여드려요.</p><span class="empty-arrow">새로운 가능성을 뽑아보세요 ↗</span></div>
+        <article id="company-result" hidden></article>
+        <div id="drawing-overlay" class="drawing-overlay" hidden><div class="rolling-dice">⚄</div><strong>부산의 기업을 만나러 가는 중…</strong><span>당신의 다음 출근지를 찾고 있어요.</span></div>
+      </div>
+    </section>
+    <p class="honesty-note"><span>ⓘ</span> 취업을 상상하는 기업 탐색 도구입니다. 실제 채용·합격 확률을 뜻하지 않으며, 확인되지 않은 수치는 만들지 않습니다.</p>
+
+    <section class="history-section" aria-labelledby="history-title"><div class="section-heading"><div><span class="eyebrow">MY CAREER JOURNEY</span><h2 id="history-title">최근 만난 회사 <span id="history-count">0</span></h2></div><button id="clear-history" class="text-button" type="button" disabled>기록 비우기</button></div><div id="history" class="history"><div class="history-empty"><span>↗</span><p>아직 출근 기록이 없어요. 첫 번째 회사를 만나보세요.</p><small>최근 20회가 이 기기에 저장됩니다.</small></div></div></section>
+
+    <section id="companies" class="directory-section" aria-labelledby="directory-title"><div class="section-heading"><div><span class="eyebrow">MEET THE LOCAL COMPANIES</span><h2 id="directory-title">부산에는 이런 회사도 있어요.</h2></div><span id="directory-count" class="pill">출처 확인 중</span></div><div class="directory-toolbar"><label class="search-field"><span>⌕</span><input id="company-search" type="search" placeholder="기업명, 업종, 구·군으로 검색" aria-label="기업 검색"></label><span class="small muted">기업을 누르면 상세 정보가 열립니다.</span></div><div id="company-grid" class="company-grid"></div><button id="show-more" class="more-button" type="button" hidden>기업 더 보기 <span>↓</span></button></section>
+
+    <section id="data-note" class="data-section" aria-labelledby="data-title"><div class="data-intro"><span class="eyebrow">OPEN DATA, HONEST POSSIBILITIES</span><h2 id="data-title">재미는 가볍게.<br>데이터는 진지하게.</h2><p>기업 이름 뒤에 있는 정보도 중요하니까요.<br>무엇을 확인했고, 무엇이 비어 있는지 공개합니다.</p><a href="./data/companies.json" download class="data-download">기업 데이터 내려받기 <span>↓</span></a><button class="text-button methodology-trigger" type="button">확률 계산과 데이터 범위 자세히 보기 ↗</button></div><div class="data-content"><div id="coverage-cards" class="coverage-cards"></div><div class="stat-chart"><div class="chart-heading"><h3>수집된 기업의 업종 분포</h3><span>기업 수 기준</span></div><div id="industry-chart"></div><p class="small muted">부산 전체의 고용분포와 다릅니다. 실제 추첨 가중치는 업종별 종사자 수를 사용합니다.</p></div><div class="data-disclosure"><strong>빈칸도 정보입니다.</strong><p>전국 인원을 부산 인원으로 사용하지 않습니다. 연봉·근속·복지는 확인된 자료만 표시합니다. 블라인드 평점은 재배포 권한을 확인하지 못해 제공하지 않습니다.</p><span id="data-date">조회일 확인 중</span></div></div></section>
+    <section class="source-section"><h3>출처에서 시작하는 신뢰</h3><div id="global-sources" class="global-sources"></div><p class="small muted">기업별 상세 출처와 기준시점은 결과 카드에서 확인할 수 있습니다. 자료는 과거 시점의 정보일 수 있으며 현재 채용이나 영업 상태를 보증하지 않습니다.</p></section>
+  </main>
+  <footer class="footer wrap"><span>부산취업 랜덤클럽 <small>BUSAN WORK CLUB</small></span><p>부산에서 만나는, 또 하나의 가능성.</p><a href="#hero-title">처음으로 ↑</a></footer>
+  <dialog id="method-dialog" aria-labelledby="method-title"><div class="dialog-header"><h2 id="method-title">확률과 데이터 노트</h2><button type="button" class="close-dialog" aria-label="닫기">✕</button></div><div id="method-content"></div></dialog>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-header"><h2 id="detail-title">기업 정보</h2><button type="button" class="close-dialog" aria-label="닫기">✕</button></div><div id="detail-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="wrap">이 사이트의 추첨 기능에는 JavaScript가 필요합니다. 기업 자료는 <a href="./data/companies.json">기업 JSON</a>에서 확인할 수 있습니다.</p></noscript>
+</body>
+</html>
