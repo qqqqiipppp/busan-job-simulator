@@ -178,7 +178,7 @@ function restoreShared() {
 async function init() {
   try {
     const getJSON = async path => { const r = await fetch(path); if (!r.ok) throw new Error(`${path}: ${r.status}`); return r.json(); };
-    const [database, statistics] = await Promise.all([getJSON('./data/companies.json'),getJSON('./data/employment.json')]);
+    const [database, statistics] = await Promise.all([getJSON('./data/companies-full.json'),getJSON('./data/employment.json')]);
     companies = database.companies; meta = database.meta; stats = statistics;
     state = readSavedState(getStorage(),storageKey,companies,meta.lotteryVersion || meta.version);
     $('#verified-count').textContent = String(companies.length); $('#sector-count').textContent = String(new Set(companies.map(c => c.industryCode)).size);
